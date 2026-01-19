@@ -8,4 +8,6 @@ contract user {
   address public creator;
   address public escrow;
 
+  //contract intitalization
+
 }
