@@ -13,7 +13,7 @@ contract user {
 
   //contract intitalization
   constructor() {
-
+    creator = msg.sender;
   }
 
   //recieve payment
