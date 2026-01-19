@@ -9,7 +9,7 @@ contract user {
   address public escrow;
 
   //allocated balance
-  uint256 public halfedValue;
+  uint256 public halvedValue;
 
   //contract intitalization
   constructor() {
@@ -18,7 +18,7 @@ contract user {
 
   //recieve payment
   fallback(uint256 paymentType, uint256 amount) external payable {
-
+      halvedValue = msg.value/2;
   }
 
 }
