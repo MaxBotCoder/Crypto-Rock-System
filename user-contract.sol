@@ -12,7 +12,11 @@ contract user {
   uint256 public halfedValue;
 
   //contract intitalization
-  constructor () {
+  constructor() {
+
+  }
+
+  fallback() external payable {
 
   }
 
