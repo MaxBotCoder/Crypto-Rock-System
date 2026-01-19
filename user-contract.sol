@@ -8,6 +8,9 @@ contract user {
   address public creator;
   address public escrow;
 
+  //allocated balance
+  uint256 public halfedValue;
+
   //contract intitalization
   constructor () {
 
