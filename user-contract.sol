@@ -16,6 +16,7 @@ contract user {
 
   }
 
+  //recieve payment
   fallback() external payable {
 
   }
