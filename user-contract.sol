@@ -9,5 +9,8 @@ contract user {
   address public escrow;
 
   //contract intitalization
+  constructor () {
+
+  }
 
 }
