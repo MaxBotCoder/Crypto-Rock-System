@@ -20,9 +20,9 @@ contract user {
   function sendMoney(uint256 paymentType, uint256 amount) public {
       halvedValue = msg.value/2;
       if (paymentType == 1) {
-        
+        creator.send{value: halvedValue, gas: 100000}("");
       } else if (paymentType == 2) {
-
+        escrow.send{value: halvedValue, gas: 100000}("");
       }
   }
 
