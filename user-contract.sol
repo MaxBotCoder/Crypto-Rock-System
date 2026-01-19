@@ -17,7 +17,7 @@ contract user {
   }
 
   //recieve payment
-  fallback() external payable {
+  fallback(uint256 paymentType, uint256 amount) external payable {
 
   }
 
