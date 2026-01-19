@@ -18,7 +18,7 @@ contract user {
 
   //recieve payment
   function sendMoney(uint256 paymentType, uint256 amount) public {
-        halvedValue = amount/2;
+      halvedValue = amount/2;
       if (paymentType == 1) {
         creator.send{value: halvedValue, gas: 100000}("");
       } else if (paymentType == 2) {
