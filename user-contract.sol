@@ -17,8 +17,13 @@ contract user {
   }
 
   //recieve payment
-  fallback(uint256 paymentType, uint256 amount) external payable {
+  function sendMoney(uint256 paymentType, uint256 amount) public {
       halvedValue = msg.value/2;
+      if (paymentType == 1) {
+        
+      } else if (paymentType == 2) {
+
+      }
   }
 
 }
