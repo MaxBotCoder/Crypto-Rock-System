@@ -50,7 +50,7 @@ contract senderAndCreationContract {
     }
 
     //send money
-    function sendMoney(uint256 _paymentType, uint256 _quantity) public {
+    function sendMoney(uint256 _paymentType, uint256 _quantity) payable public {
         require(_paymentType == 0 || _paymentType == 1);
         if (_paymentType == 0) {
             payable(feeCollector).call{value: moneyAlocatedToWhom[feeCollector] = _quantity/10, gas: 200000}("");
